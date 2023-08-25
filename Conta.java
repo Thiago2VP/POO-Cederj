@@ -34,4 +34,8 @@ class Conta{
 	void retira(float soma) {
 		saldo -= soma;
 	}
+
+	public String toString() {
+		return "Conta corrente";
+	}
 }

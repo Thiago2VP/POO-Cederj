@@ -40,4 +40,15 @@ class Banco{
 		}
 		return null;
 	}
+
+	Poupanca criaPoupanca(String n) {
+		Poupanca c;
+		if (ind_array == MAX_CONTAS)
+			c = null;
+		else {
+			c = new Poupanca(nome, prox_conta++, this);
+			contas[ind_array++] = c;
+		}
+		return c;
+	}
 }
