@@ -1,12 +1,10 @@
 class TesteBanco {
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		Banco itau = new Banco("Itau");
 		System.out.println(itau.pegaCodB());
 		System.out.println(itau.pegaNomeB());
 		Conta maria = itau.criaConta("Maria");
 		System.out.println(maria);
-		Conta b = itau.buscaConta(1);
-		b = itau.buscaConta(2);
 		Banco bb = new Banco("Banco do Brasil");
 		Conta jose = bb.criaConta("Jose");
 		System.out.println(jose.pegaNome());
